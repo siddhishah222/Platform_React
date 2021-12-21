@@ -1,0 +1,54 @@
+// Progress component
+
+// Needed for variable translation
+@import 'libs/vars';
+
+section.progress {
+	margin: 20px 0;
+
+	@media screen and (min-width: 960px) {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas: 
+			"overview	title"
+			"overview	counter"
+			"overview	notification";
+		grid-template-columns: calc(40% - 10px) calc(60% - 10px);
+
+		margin: 40px auto;
+
+		width: 84vw;
+	}
+
+	@import 'components/progress-overview';
+	@import 'components/counter-elements';
+
+	.section-title {
+		margin: 20px;
+		grid-area: title;
+
+		@media screen and (min-width: 960px) {
+			margin: 40px 0 0;
+		}
+	}
+
+	div.confirmation-notification {
+		margin: 20px 20px 40px;
+		grid-area: notification;
+		overflow: auto;
+
+		background: no-repeat left center/cover url(../images/headers/Oval@2x.png);
+		border-radius: 8px;
+
+		@media screen and (min-width: 960px) {
+			margin: 0;
+		}
+
+		p {
+			margin: 26px 18px;
+			text-align: center;
+
+			color: $white;
+		}
+	}
+}

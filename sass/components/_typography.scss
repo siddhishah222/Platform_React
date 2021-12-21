@@ -1,0 +1,119 @@
+// Typography style
+
+// Import Gilroy Font
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy.ttf') format('TrueType');
+
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-Light.otf') format('OpenType');
+
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf') format('OpenType');
+
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+  font-family: 'venturit';
+  src:  url('../fonts/venturit/venturit.eot?vxyq6n');
+  src:  url('../fonts/venturit/venturit.eot?vxyq6n#iefix') format('embedded-opentype'),
+    url('../fonts/venturit/venturit.ttf?vxyq6n') format('truetype'),
+    url('../fonts/venturit/venturit.woff?vxyq6n') format('woff'),
+    url('../fonts/venturit/venturit.svg?vxyq6n#venturit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body {
+	font: 400 16px/1.5 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+
+	line-height: 1;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	.section-title, .section-subtitle {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+
+		color: $dark-blue;
+	}
+
+	.section-subtitle {
+		margin-top: 30px;
+
+		text-transform: uppercase;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		&.line {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: 0;
+				left: 0;
+				z-index: -500;
+
+				height: 2px;
+
+				background: $light-gray;
+			}
+
+			span {
+				padding-right: 10px;
+				background: $white-smoke;
+			}
+		}
+	}
+
+	h1.line:after { top: 12px; }
+	h2.line:after { top: 10px; }
+	h3.line:after { top: 8px; }
+	h4.line:after { top: 6px; }
+	h5.line:after { top: 4px; }
+	h6.line:after { top: 2px; }
+}
+
+form {
+	input, button {
+		font-family: 'Nunito', sans-serif;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+.Gilroy {
+	font-family: 'Gilroy', sans-serif;
+}
