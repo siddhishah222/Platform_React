@@ -17,18 +17,18 @@ const events = [
 	}, 
 	{
 		topic: 'Agriculture', 
-		title: 'Agriculture & Food Sciences', 
+		title: 'Agriculture & Food', 
 		date: 'Jun, 2'
 	},
 	{
-		topic: 'Science', 
+		topic: 'Health', 
 		title: 'Public Health & Research', 
-		date: 'Oct, 6'
+		date: 'Aug, 17'
 	}, 
 	{
 		topic: 'Science', 
 		title: 'Life & Neutral Sciences', 
-		date: 'Oct, 28'
+		date: 'Nov, 22'
 	}
 ];
 
