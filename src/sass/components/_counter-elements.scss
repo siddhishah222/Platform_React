@@ -1,0 +1,123 @@
+// Counter elements for Progress section
+
+@import '../libs/vars';
+
+div.counter-elements {
+	position: relative;
+	margin: 20px;
+	grid-area: counter;
+
+	display: grid;
+	grid-gap: 20px 20px;
+	grid-template-columns: 1fr 1fr;
+
+	&.loading {
+		height: 225px;
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			transform: translateX(-50%) translateY(-50%);
+
+			content: '';
+			height: 20px;
+			width: 20px;
+
+			border-radius: 50%;
+
+			animation: Loading 7s infinite;
+		}
+	}
+
+	@keyframes Loading {
+		0% { background: $orange; }
+		25% { background: $yellow; }
+		50% { background: $blue; }
+		75% { background: $gray; }
+		100% { background: $orange; }
+	}
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 1fr 1fr;
+
+		margin: 20px;
+	}
+
+	@media screen and (min-width: 960px) {
+		margin: 0;
+	}
+
+	div {
+		position: relative;
+
+		margin: 0;
+
+		border-radius: 6px;
+		box-shadow: 0 4px 16px 1px transparent;
+		transition: 300ms;
+
+		&:hover {
+			background: $blue;
+			box-shadow: 0 4px 16px 1px $blue;
+
+			h1, h2, h3, h4, h5, h6 {
+				color: $white;
+			}
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 10px;
+
+			max-width: 80px;
+
+			font-family: 'Montserrat', sans-serif;
+			line-height: 1.2;
+
+			color: $dark-gray;
+
+			@media screen and (min-width: 360px) {
+				margin: 14px;
+			}
+
+			@media screen and (min-width: 768px) {
+				margin: 20px;
+			}
+		}
+
+		&.focus {
+			background: $blue;
+
+			h1, h2, h3, h4, h5, h6 {
+				color: $white;
+			}
+
+			box-shadow: 0 4px 14px 6px $blue-alpha;
+		}
+
+		background: $white;
+
+		.float-value {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+
+			margin: 0;
+
+			font-size: 36px;
+
+			transform: translateY(-50%);
+
+			color: $dark-blue;
+
+			@media screen and (min-width: 360px) {
+				right: 14px;
+			}
+
+			@media screen and (min-width: 768px) {
+				right: 20px;
+			}
+		}
+	}
+}

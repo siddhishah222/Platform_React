@@ -1,0 +1,46 @@
+// Menu
+
+// Needed for variable translation
+@import 'libs/vars';
+
+div.menu {
+	display: none;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	flex-flow: column nowrap;
+
+	z-index: 250;
+
+	background: $blue;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 60px;
+		height: 60px;
+
+		margin: 0;
+
+		&:hover {
+			background: $dark-blue;
+		}
+
+		&:first-of-type {
+			margin-top: 66px;
+		}
+
+		i.venturit {
+			font-size: 22px;
+		}
+	}
+
+	@media screen and (min-width: 960px) {
+		display: flex;
+	}
+}

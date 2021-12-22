@@ -1,0 +1,115 @@
+// Carrousel
+
+// Needed for variable translation
+@import 'libs/vars';
+
+div.carrousel {
+	position: relative;
+	height: 230px;
+
+	@media screen and (min-width: 960px) {
+		height: 240px;
+	}
+
+	button.flickity-button {
+		opacity: 1;
+		top: auto;
+		bottom: 34px;
+
+		width: 50px;
+		height: 30px;
+
+		background: $white;
+		border-radius: 6px;
+
+		@media screen and (min-width: 960px) {
+			top: 50%;
+			bottom: auto;
+
+			transform: translateY(-50%);
+		}
+
+		&.previous {
+			left: 14px;
+		}
+
+		&.next {
+			right: 14px;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 900;
+		line-height: 1.1;
+
+		max-width: 300px;
+	}
+
+	div.carrousel-cell {
+		position: relative;
+		overflow: auto;
+
+		margin: 0 10px;
+		
+		height: 100%;
+		width: 100%;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		//background-image: url('%PUBLIC_URL%/assets/images/headers/Clock.png');
+		border-radius: 10px;
+
+		.topic {
+			position: absolute;
+			top: 14px;
+			right: 14px;
+
+			margin: 0;
+			padding: 4px 18px;
+
+			font-weight: 400;
+			text-transform: uppercase;
+
+			background: $blue;
+			border-radius: 20px;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 46px 14px 0;
+
+			font-family: 'Montserrat', sans-serif;
+
+			color: $white;
+
+			&.title {
+				font-size: 30px;
+			}
+
+			&.date {
+				margin-top: 2px;
+				font-weight: 400;
+			}
+
+			@media screen and (min-width: 960px) {
+				&.title, &.date {
+					margin: 0;
+					position: absolute;
+					top: 50%;
+
+					transform: translateY(-50%);
+				}
+
+				&.title {
+					left: 80px;
+				}
+
+				&.date {
+					right: 80px;
+
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
