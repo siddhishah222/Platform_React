@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f27faac6.css",
+    "main.js": "./static/js/main.c9cd041c.js",
+    "static/media/Clock.png": "./static/media/Clock.7d5cab1d7dcbea7c0b4a.png",
+    "static/media/Gilroy.ttf": "./static/media/Gilroy.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-ExtraBold.otf": "./static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/Gilroy-Light.otf": "./static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "static/media/Dashbi.png": "./static/media/Dashbi.3213aff173545bde944c.png",
+    "static/media/Header@2x.png": "./static/media/Header@2x.566bbb50f5c1a3f0c865.png",
+    "static/media/Platform@2x.png": "./static/media/Platform@2x.b5150665bab60d98fac7.png",
+    "static/media/venturit.svg?vxyq6n": "./static/media/venturit.7fb84ed1ccbd043b887b.svg",
+    "static/media/venturit.eot?vxyq6n": "./static/media/venturit.569a0bfb1e7bc4f570fa.eot",
+    "static/media/venturit.woff?vxyq6n": "./static/media/venturit.d1ceac77b83a2fb09132.woff",
+    "static/media/venturit.ttf?vxyq6n": "./static/media/venturit.bb6325271b285e63450e.ttf",
+    "index.html": "./index.html",
+    "main.f27faac6.css.map": "./static/css/main.f27faac6.css.map",
+    "main.c9cd041c.js.map": "./static/js/main.c9cd041c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f27faac6.css",
+    "static/js/main.c9cd041c.js"
+  ]
+}
