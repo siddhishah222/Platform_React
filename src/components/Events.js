@@ -16,13 +16,18 @@ const events = [
 		date: 'May, 20'
 	}, 
 	{
+		topic: 'Agriculture', 
+		title: 'Agriculture & Food Sciences', 
+		date: 'Jun, 2'
+	},
+	{
 		topic: 'Science', 
 		title: 'Public Health & Research', 
 		date: 'Oct, 6'
 	}, 
 	{
 		topic: 'Science', 
-		title: 'Life & Neural Sciences', 
+		title: 'Life & Neutral Sciences', 
 		date: 'Oct, 28'
 	}
 ];
